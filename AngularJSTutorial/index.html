@@ -1,18 +1,18 @@
 ﻿<!DOCTYPE html>
-<html ng-app="tutorial">
+<html ng-app="githubViewer">
 <head>
     <meta charset="utf-8" />
-    <title>AngularJs Sample</title>
+    <title>AngularJs Tutorial</title>
     <script src="Scripts/angular.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/MainController.js"></script>
 </head>
-<body>
-    <div ng-controller="MainController">
-        <h2>{{Message}}</h2>
-        
-        <div>{{error}}</div>
+<body ng-controller="MainController">
+    <div>
+        <h1>{{Message}}</h1>
 
+        <div>{{error}}</div>
+        
         <div>Name: {{user.name}}</div>
         <div>Location: {{user.location}}</div>
         <img ng-src="{{user.avatar_url}}"/>
