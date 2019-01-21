@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="tutorial">
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJs Sample</title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/MainController.js"></script>
+</head>
+<body>
+    <div ng-controller="MainController">
+        <h2>{{Message}}</h2>
+        
+        <div>{{error}}</div>
+
+        <div>Name: {{user.name}}</div>
+        <div>Location: {{user.location}}</div>
+        <img ng-src="{{user.avatar_url}}"/>
+    </div>
+</body>
+</html>
